@@ -1,7 +1,7 @@
 drawArea = document.querySelector("#container")
-button = document.querySelector("button")
+buttons = document.querySelectorAll("button")
 
-button.addEventListener("click", () => {
+buttons[0].addEventListener("click", () => {
     let size = prompt("How many pixels would you like a side to be? (max 40)", "10")
     removeGrid();
     if (size >= 0 && size <= 40) {
@@ -10,6 +10,10 @@ button.addEventListener("click", () => {
         makeGrid(10);
     }
 });
+
+buttons[1].addEventListener("click", () => {
+    removeGrid();
+})
 
 /* Creates a square of divs with the given length */
 function makeGrid(num) {
