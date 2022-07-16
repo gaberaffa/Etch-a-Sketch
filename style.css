@@ -20,9 +20,29 @@ body {
     width: 50%;
     border: 1px solid black;
     align-content: flex-start;
+    padding: 0px;
+    margin: 0px;
 }
 
 .grid-square {
     border: 1px solid black;
+}
+
+.hovered {
+    background-color: rgb(50,50,50);
+}
+
+button {
     background-color: white;
+    border-color: black;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+    font-size: 3em;
+    margin: 0.5em;
+
+}
+
+button:hover {
+    background-color: brown;
+    color: white
 }
