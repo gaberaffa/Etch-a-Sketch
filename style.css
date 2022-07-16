@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgb(200,200,200);
+    background-color: maroon;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     flex-basis: 0%;
     background-color: white;
     aspect-ratio: 1/1;
-    width: 50%;
+    width: 40em;
     border: 1px solid black;
     align-content: flex-start;
     padding: 0px;

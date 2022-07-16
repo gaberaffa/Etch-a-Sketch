@@ -2,9 +2,9 @@ drawArea = document.querySelector("#container")
 buttons = document.querySelectorAll("button")
 
 buttons[0].addEventListener("click", () => {
-    let size = prompt("How many pixels would you like a side to be? (max 40)", "10")
+    let size = prompt("How many pixels would you like a side to be? (max 50)", "10")
     removeGrid();
-    if (size >= 0 && size <= 40) {
+    if (size >= 0 && size <= 50) {
         makeGrid(size);
     } else {
         makeGrid(10);
