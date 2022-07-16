@@ -2,9 +2,9 @@ drawArea = document.querySelector("#container")
 button = document.querySelector("button")
 
 button.addEventListener("click", () => {
-    let size = prompt("How many pixels would you like a side to be? (max 50)", "10")
+    let size = prompt("How many pixels would you like a side to be? (max 40)", "10")
     removeGrid();
-    if (size >= 0 && size <= 50) {
+    if (size >= 0 && size <= 40) {
         makeGrid(size);
     } else {
         makeGrid(10);
@@ -21,7 +21,7 @@ function makeGrid(num) {
         });
 
         div.setAttribute("class", "grid-square");
-        div.style.width = `${Math.floor((drawArea.offsetWidth - 2)/num) - 2}px`;
+        div.style.width = `${(drawArea.offsetWidth - 2)/num - 2}px`;
         div.style.height = div.style.width;
         drawArea.appendChild(div);
     }
