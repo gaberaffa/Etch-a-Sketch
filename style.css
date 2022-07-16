@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: maroon;
+    background-image: linear-gradient(maroon, white 90%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     flex-basis: 0%;
     background-color: white;
     aspect-ratio: 1/1;
-    width: 40em;
+    width: 38em;
     border: 1px solid black;
     align-content: flex-start;
     padding: 0px;
@@ -29,7 +29,7 @@ body {
 }
 
 .hovered {
-    background-color: rgb(50,50,50);
+    background-color: maroon;
 }
 
 button {
